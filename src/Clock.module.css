@@ -1,0 +1,142 @@
+.content{
+
+    height:0px;
+    padding-bottom:100%;
+
+    position:relative;
+
+}
+
+.clock{
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    border-radius:50%;
+
+    box-shadow:0 0 6px rgba(0,0,0,0.16);
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.hand{
+
+    position:absolute;
+    width:80%;
+
+    font-weight:600;
+    letter-spacing:1px;
+    font-size:1.2em;
+    color:#757575;
+
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+.middle{
+
+    width:6px;
+    height:6px;
+
+    background:#757575;
+
+    border-radius:50%;
+
+}
+
+.arrow{
+
+    position:absolute;
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+
+.arrow > div{
+
+    flex-basis:50%;
+
+}
+
+
+.arrow_hours{
+
+    z-index:100;
+    width:60%;
+
+}
+
+.arrow_hours > div{
+
+    background:#28b782;
+    height:3px;
+    border-radius:3px;
+
+}
+
+.arrow_minutes{
+
+    z-index:101;
+    width:75%;
+
+}
+
+.arrow_minutes > div{
+
+    background:#28b782;
+    height:3px;
+    border-radius:3px;
+
+}
+
+.arrow_seconds{
+
+    z-index:102;
+    width:80%;
+
+}
+
+.arrow_seconds > div{
+
+    background:#28b782;
+    height:1px;
+    border-radius:1px;
+
+}
+
+
+.second{
+
+    position:absolute;
+    width:93%;
+
+
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+
+
+}
+
+.second > div{
+
+    height:3px;
+    width:9px;
+    background-color:#dedede;
+    border-radius:50%;
+
+}
+
+.second_dark > div{
+
+    background-color:#808080;
+
+}
